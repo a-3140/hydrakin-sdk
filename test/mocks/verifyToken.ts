@@ -19,6 +19,7 @@ const verifyToken = () =>
         lastName: "",
         isStaff: true,
         metadata: [],
+        isSeller: false,
         addresses: [],
         defaultBillingAddress: null,
         defaultShippingAddress: null,

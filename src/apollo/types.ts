@@ -10402,6 +10402,8 @@ export type User = Node & ObjectWithMetadata & {
   email: Scalars['String'];
   firstName: Scalars['String'];
   lastName: Scalars['String'];
+  /** Determine if user is a seller type. */
+  isSeller: Maybe<Scalars['Boolean']>;
   isStaff: Scalars['Boolean'];
   isActive: Scalars['Boolean'];
   /** A note about the customer. */
@@ -11290,7 +11292,7 @@ export type AddressFragment = (
   & { country: Pick<CountryDisplay, 'code' | 'country'> }
 );
 
-export type UserBaseFragment = Pick<User, 'id' | 'email' | 'firstName' | 'lastName' | 'isStaff'>;
+export type UserBaseFragment = Pick<User, 'id' | 'email' | 'firstName' | 'lastName' | 'isStaff' | 'isSeller'>;
 
 export type UserDetailsFragment = (
   { metadata: Array<Maybe<Pick<MetadataItem, 'key' | 'value'>>>, defaultShippingAddress: Maybe<AddressFragment>, defaultBillingAddress: Maybe<AddressFragment>, addresses: Maybe<Array<Maybe<AddressFragment>>> }

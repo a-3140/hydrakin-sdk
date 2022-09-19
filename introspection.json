@@ -68453,6 +68453,18 @@
             "deprecationReason": null
           },
           {
+            "name": "isSeller",
+            "description": "Determine if user is a seller type.",
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Boolean",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "isStaff",
             "description": null,
             "args": [],

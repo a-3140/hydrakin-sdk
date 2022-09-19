@@ -29,6 +29,7 @@ const externalObtainAccessTokens = (
         firstName: "",
         lastName: "",
         isStaff: true,
+        isSeller: false,
         metadata: [],
         addresses: [],
         defaultBillingAddress: null,

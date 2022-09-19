@@ -37,6 +37,7 @@ export const userBaseFragment = gql`
     firstName
     lastName
     isStaff
+    isSeller
   }
 `;
 
