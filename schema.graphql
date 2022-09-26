@@ -609,6 +609,7 @@ type AttributeValue implements Node {
   reference: ID
   file: File
   richText: JSONString
+  plainText: String
   boolean: Boolean
 }
 
@@ -640,6 +641,7 @@ input AttributeValueCreateInput {
   name: String!
   value: String
   richText: JSONString
+  plainText: String
 }
 
 type AttributeValueDelete {
@@ -660,6 +662,7 @@ input AttributeValueInput {
   contentType: String
   references: [ID!]
   richText: JSONString
+  plainText: String
   boolean: Boolean
 }
 
