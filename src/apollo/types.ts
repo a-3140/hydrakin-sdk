@@ -943,6 +943,8 @@ export type AttributeValue = Node & {
   file: Maybe<File>;
   /** Represents the text (JSON) of the attribute value. */
   richText: Maybe<Scalars['JSONString']>;
+  /** Represents the text of the attribute value, plain text without formating. */
+  plainText: Maybe<Scalars['String']>;
   /** Represents the boolean value of the attribute value. */
   boolean: Maybe<Scalars['Boolean']>;
 };
@@ -994,6 +996,8 @@ export type AttributeValueCreateInput = {
   value?: Maybe<Scalars['String']>;
   /** Represents the text (JSON) of the attribute value. */
   richText?: Maybe<Scalars['JSONString']>;
+  /** Represents the text of the attribute value, plain text without formating. */
+  plainText?: Maybe<Scalars['String']>;
 };
 
 /** Deletes a value of an attribute. */
@@ -1023,6 +1027,8 @@ export type AttributeValueInput = {
   references?: Maybe<Array<Scalars['ID']>>;
   /** Text content in JSON format. */
   richText?: Maybe<Scalars['JSONString']>;
+  /** Represents the text of the attribute value, plain text without formating. */
+  plainText?: Maybe<Scalars['String']>;
   /** Represents the boolean value of the attribute value. */
   boolean?: Maybe<Scalars['Boolean']>;
 };
